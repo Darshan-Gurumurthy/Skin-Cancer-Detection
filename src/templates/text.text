@@ -1,0 +1,31 @@
+pdfkit.from_url('http://google.com', 'out.pdf')
+
+
+res = render_template('result.html', result=result) #generating pdf
+  responsestring  = pdf.from_file(res,False)
+  response = make_response(responsestring)
+  response.headers['Content-Type'] = 'application/pdf'
+  response.headers['Content-Disposition'] = 'inline;filename=output.pdf'
+
+
+  cursor.execute('SELECT password FROM accounts WHERE username = % s', (username, ))
+    temp_pass = cursor.fetchone()
+    result_pass = check_password_hash(temp_pass['password'], password)
+
+    {% block content %}
+    {% with messages = get_flashed_messages() %}
+        {% if messages %}
+          {%  for msg in messages %}
+            <p>{{msg}}</p>
+          {%  endfor %}
+        {% endif %}
+    {% endwith %}
+    {% endblock %}
+
+// to get the pdf of result
+    <form action="/getpdf" id="getpdf" method="post" enctype="multipart/form-data">
+
+        <div>
+            <input type="submit" class="btn btn-success" id="btn-predict" value="Get Report" />
+        </div>
+    </form>

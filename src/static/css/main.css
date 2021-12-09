@@ -1,0 +1,31 @@
+.form-control {
+    width: 50%;
+}
+
+.custom-file-input {
+    width: 50%;
+}
+
+.custom-file-label {
+    width: 50%;
+}
+
+.btn {
+    margin-top: 10px;
+}
+
+.comment{
+margin-top:20px;
+}
+
+.img-thumbnail {
+    width: 350px;
+    height: 300px;
+}
+
+.table {
+width:50%;
+}
+.navbar-custom {
+            background-color: #f5f242;
+        }

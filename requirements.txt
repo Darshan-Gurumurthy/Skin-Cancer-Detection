@@ -1,0 +1,4 @@
+Flask
+gunicorn
+numpy
+fastai==1.0.52
